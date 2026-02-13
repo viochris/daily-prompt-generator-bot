@@ -67,8 +67,7 @@ cd daily-prompt-generator-bot
 
 2. **Install Dependencies**
 ```bash
-pip install -r requirements.txt
-# Requires: prefect, gspread, python-dotenv, google-genai
+pip install prefect gspread python-dotenv google-genai
 ```
 
 3. **Run the Automation**
