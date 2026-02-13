@@ -22,7 +22,7 @@ load_dotenv()
 # 2. API Keys & Secrets
 # Fetch sensitive credentials securely from the environment system.
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-client = genai.Client(api_key='AIzaSyDZn-UPBMQihYCdD5d39hIZ3iFy4iL-C_o')
+client = genai.Client(api_key=GOOGLE_API_KEY)
 
 def get_google_sheets():
     # 2. GOOGLE SHEETS SETUP
