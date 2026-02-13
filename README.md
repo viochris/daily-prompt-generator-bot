@@ -17,6 +17,12 @@ This project is designed to work seamlessly with the **[Automated Image Pipeline
 * **Consumer (Image Bot):** Reads from the same spreadsheet, generates the art, and posts it to Telegram.
 * **Flexible Scheduling:** You can run them as a single monolithic flow or schedule them sequentially (e.g., Prompt Gen at 06:00, Image Gen at 06:10) to ensure your content queue never runs dry.
 
+### ⚡ Batch Processing (High-Volume Mode)
+Need more than one idea per day? Check out the **[Batch Prompt Bot Variant](https://github.com/viochris/daily-batch-prompt-bot)**.
+* **3x Efficiency:** Instead of one prompt, the AI generates **3 unique prompts** in a single API call.
+* **Smart Parsing:** The AI formats the output with specific delimiters (Double Newlines), which the script automatically splits into a list.
+* **Bulk Upload:** Uses `gspread`'s batch insertion features to upload all 3 prompts to the database simultaneously, filling your queue faster with fewer resources.
+
 ## ✨ Key Features
 ### 🧠 Creative AI Engineering
 * **Gemini 2.5 Flash Integration:** Leverages the latest Google GenAI SDK to generate descriptive, artistic prompts.
